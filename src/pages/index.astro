@@ -1,0 +1,67 @@
+---
+
+---
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-black p-16 flex items-center justify-center flex-col h-svh font-mono"
+    style="background-image: url('');"
+  >
+    <img
+      src="./LOGO 1.png"
+      alt="logo"
+      id="logo1"
+      class="max-w-[300px] cursor-pointer"
+    />
+    <img
+      src="./star ascii 2.png"
+      alt="logo"
+      id="logo2"
+      class="max-w-[200px] cursor-pointer hidden"
+    />
+
+    <script>
+      const logo1 = document.getElementById("logo1");
+      const logo2 = document.getElementById("logo2");
+
+      logo1.addEventListener("click", () => {
+        logo1.classList.add("hidden");
+        logo2.classList.remove("hidden");
+      });
+
+      logo2.addEventListener("click", () => {
+        logo2.classList.add("hidden");
+        logo1.classList.remove("hidden");
+      });
+    </script>
+
+    <p class="text-white mt-6">
+      crafting the best tooling & analytics for ethereum staking
+    </p>
+    <div class="flex items-center justify-center gap-3 mt-3">
+      <a
+        class="text-blue-600 underline-offset-0 hover:underline"
+        href="https://github.com/vistastaking">Github</a
+      >
+      <a
+        class="text-blue-600 underline-offset-0 hover:underline"
+        href="https://twitter.com/vistastaking">Twitter</a
+      >
+    </div>
+  </body>
+</html>
+
+<style>
+  .custom-font {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+</style>
