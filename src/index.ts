@@ -45,6 +45,12 @@ scene.add(pointLight);
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
 scene.add(ambientLight);
 
+window.addEventListener("resize", function () {
+  effect.setSize(window.innerWidth, window.innerHeight);
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+});
+
 function animate() {
   requestAnimationFrame(animate);
 
