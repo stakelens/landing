@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://vistastaking.github.io',
-  base: 'landing',
+  site: 'https://vistastaking.com',
+  base: '/landing',
   integrations: [tailwind()]
 });
